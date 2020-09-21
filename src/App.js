@@ -10,8 +10,10 @@ function App() {
   return (
       <div className="wrapper">
           <Header />
-          <Navigation/>
-          <Content/>
+          <div className="content-wrapper">
+              <Navigation/>
+              <Content/>
+          </div>
           <AddForm/>
           <Posts/>
       </div>

@@ -8,7 +8,7 @@ export const Navigation = () => {
                 <div className="nav__item"><a href="#">Message</a></div>
                 <div className="nav__item"><a href="#">New</a></div>
                 <div className="nav__item"><a href="#">Music</a></div>
-                <div className="nav__item last"><a href="#">Settings</a></div>
+                <div className="nav__item_last"><a href="#">Settings</a></div>
             </div>
         </nav>
     )
