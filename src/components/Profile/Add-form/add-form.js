@@ -8,7 +8,7 @@ export const AddForm = () => {
             <div className="form__title">My Posts</div>
             <div className="form__wrapper">
                 <input type="text" className="form__input" placeholder="Enter your news..."/>
-                <button className="form__button"><a className="" href="#">Send</a></button>
+                <button className="form__button"><a className="" href="form">Send</a></button>
             </div>
         </div>
     )

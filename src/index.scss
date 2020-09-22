@@ -1,5 +1,5 @@
 
-$main-color: #13CE66;
+$main-color: #75cbad;
 
 
 body {
@@ -17,6 +17,7 @@ code {
     monospace;
 }
 
+// HEADER --------------------------------------------------------------------------------------------------
 
 .app {
   &__header {
@@ -43,6 +44,7 @@ code {
 
 }
 
+// NAVBAR -------------------------------------------------------------------------------
 
 .nav {
   margin-top: 20px;
@@ -62,6 +64,9 @@ code {
         line-height: 44px;
         text-decoration: none;
       }
+      &__item a:hover {
+        color: #ecc63e;
+      }
       &__item_last a{
         color: #FFFFFF;
         font-family: Lato;
@@ -69,7 +74,13 @@ code {
         line-height: 100px;
         text-decoration: none;
       }
+      &__item_last a:hover {
+        color: #ecc63e;
+      }
 }
+
+// PAGE ---- PROFILE ---------------------------------------------------------------------------------------------
+
 .content-wrapper {
   display: flex;
 }
@@ -83,22 +94,22 @@ code {
 .top {
     &__img {
       width: 100%;
-      height: 250px;
+      height: 70px;
       border-radius: 10px;
     }
 }
 
 .profile {
   display: flex;
-  margin-top: 80px;
+  margin-top: 40px;
     &__avatar {
-      width: 350px;
+      width: 300px;
     }
 }
 
 .user {
     &__data {
-      margin-top: 80px;
+      margin-top: 40px;
       margin-left: 40px;
     }
     &__title {
@@ -125,7 +136,7 @@ code {
 
 .form {
   width: 100%;
-  padding: 30px 30px;
+  padding: 50px 30px;
 .hr {
   margin: 40px  0;
 }
@@ -141,7 +152,7 @@ code {
   }
   &__input {
     display: flex;
-    background-color: #E6EEEA;
+    background-color: #FFFAA1;
     width: 70%;
     height: 46px;
     border-radius: 30px;
@@ -149,19 +160,22 @@ code {
     margin: 0 auto;
     font-size: 22px;
   }
+  &__input:focus {
+    background-color: antiquewhite;
+  }
   &__wrapper {
     display: flex;
     margin-top: 30px;
   }
   &__button {
-    background-color: #0CB658;
+    background-color: $main-color;
     width: 15%;
     height: 46px;
     border-radius: 30px;
     margin: auto;
     a {
       text-decoration: none;
-      color: #FFFFFF;
+      color: azure;
       font-family: Lato;
       font-size: 26px;
       margin: 0 auto;
@@ -170,7 +184,8 @@ code {
 }
 
 .posts {
-  padding: 30px 100px;
+  padding: 5px 100px;
+  margin: 0 auto;
   &__item {
     display: flex;
     padding: 20px 20px;
@@ -184,5 +199,13 @@ code {
     margin: auto 50px;
     font-size: 26px;
   }
+  &__like {
+    font-size: 25px;
+    margin: auto 0 auto auto;
+    text-align: right;
+  }
 }
+
+
+// PAGE ------ MESSAGES -----------------------------------------------------------------------------------------
 
