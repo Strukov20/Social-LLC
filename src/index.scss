@@ -31,7 +31,7 @@ code {
   &__logo {
     position: absolute;
     width: 55px;
-    margin-left: 40px;
+    margin-left: 60px;
   }
   &__title {
     position: absolute;
@@ -48,7 +48,7 @@ code {
   margin-top: 20px;
   width: 20%;
   padding: 10px 10px 10px 10px;
-  height: 780px;
+  height: 750px;
   background-color: $main-color;
   border-radius: 10px;
     &__items {
@@ -84,6 +84,7 @@ code {
     &__img {
       width: 100%;
       height: 250px;
+      border-radius: 10px;
     }
 }
 
@@ -120,5 +121,68 @@ code {
       font-family: Lato;
 
     }
+}
+
+.form {
+  width: 100%;
+  padding: 30px 30px;
+.hr {
+  margin: 40px  0;
+}
+  &__title {
+    color: #47525E;
+    font-family: Lato;
+    font-size: 45px;
+    text-align: left;
+    padding: 0 80px;
+    font-weight: bold;
+    font-style: italic;
+
+  }
+  &__input {
+    display: flex;
+    background-color: #E6EEEA;
+    width: 70%;
+    height: 46px;
+    border-radius: 30px;
+    padding: 0 30px;
+    margin: 0 auto;
+    font-size: 22px;
+  }
+  &__wrapper {
+    display: flex;
+    margin-top: 30px;
+  }
+  &__button {
+    background-color: #0CB658;
+    width: 15%;
+    height: 46px;
+    border-radius: 30px;
+    margin: auto;
+    a {
+      text-decoration: none;
+      color: #FFFFFF;
+      font-family: Lato;
+      font-size: 26px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.posts {
+  padding: 30px 100px;
+  &__item {
+    display: flex;
+    padding: 20px 20px;
+    border: 1px solid;
+    margin-top: 20px;
+  }
+  &__img {
+    width: 90px;
+  }
+  &__title {
+    margin: auto 50px;
+    font-size: 26px;
+  }
 }
 
