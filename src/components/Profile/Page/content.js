@@ -5,6 +5,17 @@ import {AddForm} from "../Add-form/add-form";
 import {Posts} from "../Posts/posts";
 
 export const Content = () => {
+
+    let posts = [
+        { id: "1", message: 'Hi, how are you?', likesCount: '23'},
+        { id: "2", message: 'It`s our new program! Hey!', likesCount: '43'},
+        { id: "3", message: 'Hi, good job!', likesCount: '53'},
+        { id: "4", message: 'Hey, why nobody love me?', likesCount: '13'}
+
+    ]
+
+    let postsElement = posts.map( post => <Posts message={post.message} likesCount = {post.likesCount} />)
+
     return (
         <div className="content-wrapper">
             <div className="content">
@@ -13,8 +24,7 @@ export const Content = () => {
                 {/*</div>*/}
                 <Profile/>
                 <AddForm/>
-                <Posts message="Hey, why nobody love me?" likesCount = "0" />
-                <Posts message="It`s our new program! Hey!" likesCount = "23" />
+                {postsElement}
             </div>
         </div>
     )

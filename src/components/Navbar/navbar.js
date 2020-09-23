@@ -1,15 +1,17 @@
 import React from "react";
+import {NavLink} from "react-router-dom";
 
 
 export const Navbar = () => {
     return (
         <nav className="nav">
             <div className="nav__items">
-                <div className="nav__item"><a href="/profile">Profile</a></div>
-                <div className="nav__item"><a href="/dialogs">Dialogs</a></div>
-                <div className="nav__item"><a href="/news">News</a></div>
-                <div className="nav__item"><a href="/audio">Music</a></div>
-                <div className="nav__item_last"><a href="/settings">Settings</a></div>
+                <div className="nav__item"><NavLink activeClassName="activeLink" to="/profile">Profile</NavLink></div>
+                <div className="nav__item"><NavLink activeClassName="activeLink" to="/dialogs">Dialogs</NavLink></div>
+                <div className="nav__item"><NavLink activeClassName="activeLink" to="/news">News</NavLink></div>
+                <div className="nav__item"><NavLink activeClassName="activeLink" to="/audio">Music</NavLink></div>
+                <hr className="nav__hr"/>
+                <div className="nav__item_last"><NavLink activeClassName="activeLink" to="/settings">Settings</NavLink></div>
             </div>
         </nav>
     )
