@@ -2,6 +2,8 @@ import React from "react";
 
 export const Posts = (props) => {
 
+
+
     return (
         <div className="posts">
             <div className="posts__items">
