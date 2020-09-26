@@ -206,7 +206,7 @@ code {
       text-decoration: none;
       color: azure;
       font-family: Lato;
-      font-size: 26px;
+      font-size: 22px;
       margin: 0 auto;
     }
   }
@@ -254,7 +254,6 @@ code {
   }
 
   &__items {
-
     width: 30%;
     border: 1px solid darkgrey;
     border-radius: 20px;
@@ -282,18 +281,17 @@ code {
     }
   }
   .vertical-line {
-    margin: 0px 20px;
+    margin: 0 20px;
     border-left: 3px solid ;
     height: 760px;
     color: #009191;
   }
 
   &__mess-items {
-    width: 60%;
+    width: 66%;
     border: 1px solid darkgrey;
     border-radius: 10px;
     padding: 20px 10px;
-
   }
 
   &__mess-item {
@@ -315,6 +313,76 @@ code {
     width: 50px;
     margin: 0 10px;
   }
+  &__mess__sending{
+    .mess_hr {
+      width: 550px;
+      margin-bottom: 20px;
+      background: $main-color;
+    }
+    position: absolute;
+    margin: 0 20px;
+    left: 46%;
+    bottom: 10%;
+    &__input {
+      padding: 15px 20px;
+      width: 435px;
+      border: 1px solid darkgray;
+      border-radius: 15px;
+      font-size: 16px;
+    }
+    &__button {
+      margin-left: 20px;
+      width: 120px;
+      height: 50px;
+      border: 1px solid darkgray;
+      border-radius: 40px;
+      background: $main-color;
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+  }
+}
 
+.sidebar {
+    padding: 10px 10px;
+    margin: 20px 20px;
+    width: 80%;
+    border: 1px solid darkgray;
+    border-radius: 20px;
+    height: 750px;
+    &__title {
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: 36px;
+      font-weight: bold;
+    }
+    &__items {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      flex-wrap:wrap;
+      border: 1px solid darkgray;
+      border-radius: 20px;
+      margin: 0 10px;
+      padding: 30px 10px;
+    }
+    &__item {
+      padding: 10px 10px;
+      width: 90px;
+      &__img {
+        width: 60px;
+      }
+      &__name {
+        color: #47525E;
+        font-weight: bold;
+      }
+      &__url {
+        text-decoration: none;
+      }
+    }
 
 }

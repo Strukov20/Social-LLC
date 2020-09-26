@@ -1,24 +1,17 @@
 import React from "react";
-import {NavLink} from "react-router-dom";
+import {FriendItem} from "./friendItem";
 
 export const SideBar = (props) => {
 
-    console.log(props)
+    const friendsElements = props.state.sideBar.map(src => <FriendItem name={src.name} surname={src.surname} img={src.img} />)
 
-    const path = '/friends/' + props.id;
 
-    const friendsElements = props.state.sideBar.map(src => <img className="sidebar__item__img" src={src.img} alt="Avatar"/>)
 
     return(
-        <div className="sidebar__wrapper">
-            <div className="sidebar__title">Friends:</div>
+        <div className="sidebar">
+            <div className="sidebar__title">Friends</div>
             <div className="sidebar__items">
-                <div className="sidebar__item">
-                    <NavLink  to={path}>
-                        {friendsElements}
-                    </NavLink>
-                </div>
-
+                {friendsElements}
             </div>
         </div>
     )
