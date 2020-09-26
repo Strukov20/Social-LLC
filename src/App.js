@@ -18,7 +18,6 @@ function App(props) {
             <div className="wrapper">
                 <Header />
                 <div className="content-wrapper">
-
                     <Navbar />
                     <Route  path='/profile' render={ () => <Profile state={props.state.profilePage}/> }/>
                     <Route  path='/dialogs' render={ () => <Dialogs state={props.state.dialogsPage}/> }/>
